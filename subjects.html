@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>BookBloom</title>
+</head>
+<body>
+     <!-------navbar section ------>
+     <nav class="navbar">
+        <h1 class="Logo ">BookBloom </h1>
+        <ul class="nav-link">
+            <li class="active"><a href="index.html">home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="subjects.html">subjects</a></li>
+            <li><a href="#">contact</a></li>
+            <li ><a href="#" class="ctn">log in </a></li>
+            <img src="menubtn.jpg" class="menu-btn">
+        </ul>
+     </nav>
+
+
+    <!------header dection ------->
+    <header>
+       <div class="header-content">
+        <h2>BookBloom </h2>
+        <div class="line"></div>
+        <h1> Where young minds grow through reading.</h1>
+        <a href="#" class="ctn">learn more </a>
+       </div>
+    </header>
+     <!--------galary --- -->
+  <section class="turns">
+    <div class="row">
+        <div class="col content-col">
+            <h1>book for youth and childeren </h1>
+            <div class="line"></div>
+            <p>Books play a powerful role in shaping young minds. They spark curiosity, teach values, and encourage imagination. Whether it’s a story about adventure, friendship, or personal growth, reading helps children and teens build confidence and discover the world in a fun and meaningful way.
+</p>      <a href="#" class="ctn">learn more</a>
+        </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+            <img src="book4.jpg">
+            <img src="book5.jpg">
+            <img src="book6.jpg">
+            <img src="back2.jpg">
+            </div>
+        </div>
+    </div>
+  </section>
+    <!------footer ---------->
+  <section class="footer">
+    <p>Thank you for visiting our website! We believe in the power of books to educate, inspire, and connect people of all ages. Our mission is to make learning simple, free, and enjoyable for everyone.
+</p>
+    
+  </section>
+   <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-link')
+
+    menuBtn.addEventListener('click',()=>{
+       navlinks.classList.toggle('mobile-menu')
+    })
+   </script>
+</body>
+</html>
